@@ -1,0 +1,82 @@
+				ASSIGNMENT
+
+
+6)Git Life cycle
+	Files in a Git project have various stages like Creation, Modification, Refactoring, and Deletion and so on. Irrespective of whether this project is tracked by Git or not, these phases are still prevalent. However when a project is under Git version control system, they are present in some major Git states in addition to these basic ones. Here are the Git states:
+	Local working directory: The first stage of a Git project life cycle is the local working directory where our project resides, which may or may not be tracked.
+
+Initialization: To initialize a repository, we give the command git init. With this command, we will make Git aware of the project file in our repository.
+Command : Git init
+
+Staging area: Now that our source code files, data files, and configuration files are being tracked by Git, we will add the files that we want to commit to the staging area by the git add command. This process can also be called indexing. The index consists of files added to the staging area.
+Command: git add <file name>
+
+Commit: Now, we will commit our files using the git commit -m ‘our message’ command.
+
+Command: git ommit -m <Commit Message>
+
+
+7)Describe the git commands
+
+a)git init: 
+To create a blank repository, open command line on your desired directory and run the init command as follows:
+1.	$git init  
+The above command will create an empty .git repository. Suppose we want to make a git repository on our desktop. 
+b)git add
+
+Git add command is a straight forward command. It adds files to the staging area. We can add single or multiple files at once in the staging area. It will be run as:
+1.	$ git add <File name>  .
+c)git commit
+The commit command will commit the changes and generate a commit-id. The commit command without any argument will open the default text editor and ask for the commit message.
+$ git commit  
+d)git pull
+The pull command is used to access the changes (commits)from a remote repository to the local repository. It updates the local branches with the remote-tracking branches. 
+Syntax:
+1.	$ git pull <option> [<repository URL><refspec>...]  
+e)git push
+The "git push" command is used to push into the repository. The push command can be considered as a tool to transfer commits between local and remote repositories. The basic syntax is given below:
+1.	$ git push <option> [<Remote URL><branch name><refspec>...]  
+f)git checkout
+you can demonstrate how to view a list of available branches by executing the git branch command and switch to a specified branch.
+1.	$ git branch  
+Now, you have the list of available branches. To switch between branches, use the below command.
+Syntax:
+1.	$ git checkout <branchname>  
+g)git checkout -b
+The git checkout commands let you create and switch to a new branch. You can not only create a new branch but also switch it simultaneously by a single command. 
+Syntax:
+1.	$ git checkout -b <branchname> 
+h)git log
+Git log command is one of the most usual commands of git. It is the most useful command for Git The basic git log command will display the most recent commits and the status of the head.
+$ git log
+i)git reset
+Sometimes we need to reset a particular commit; Git allows us to do so. We can reset to a particular commit. To reset it, git reset command can be used with any option supported by reset command. 
+1.	$ git reset <option> <commit-sha>  
+These options can be
+o	--soft
+o	--mixed
+o	--Hard
+j)git revert
+The git revert command is used to apply revert operation. It is an undo type command. However, it is not a traditional undo alternative. 
+Syntax: $ git revert
+k)git merge
+The git merge command is used to merge the branches.
+The syntax for the git merge command is as:
+1.	$ git merge <query>  
+l)git rebase
+When you made some commits on a feature branch (test branch) and some in the master branch. You can rebase any of these branches. 
+1.	$git rebase <branch name>  
+
+8)centralized v/s distributed version control
+The main difference between centralized and distributed version control is that, in centralized version control, the versions are saved in the remote repository, while in distributed version control, versions can be saved in the remote repository as well as in local repositories of the local machines.
+ 
+Centralized version control is the simplest form of version control in which the central repository of the server provides the latest code to the client machines. Distributed version control, on the other hand, is a form of version control where the complete codebase (including its full history) is mirrored on every developer’s computer.
+
+
+
+
+
+
+
+
+
